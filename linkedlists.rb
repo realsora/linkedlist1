@@ -6,6 +6,7 @@ class LinkedListNode
     @next_node = next_node
   end
 end
+#end of class LinkedListNode
 
 class Stack
   attr_reader :data
@@ -22,7 +23,7 @@ class Stack
   end
 
   def pop
-    print "nil\n" if @data.nil?
+    print "nil\n" if @data == nil?
     #print 'nil' if the instance variable '@data' is equal to 'nil'
     print "#{@data.value}\n"
     #print 'data.value' otherwise
